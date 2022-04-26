@@ -12,6 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public bool isJumping;
 
     private Rigidbody2D rb;
+
+    [Header("Inventory")]
+    public int keys;
+    public int coins;
+    public int gems;
     // Start is called before the first frame update
     void Start()
     {
