@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-     public enum PickupType {Key, Coin, Gem};
+    public enum PickupType {Key, Coin, Gem};
 
     public PickupType currentPickup;
 
@@ -17,6 +17,8 @@ public class Pickup : MonoBehaviour
     {
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
+
+    // Longer code but all this does is show the amount coins, keys, and gems, they woll have when they pickup the onject 
 void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))

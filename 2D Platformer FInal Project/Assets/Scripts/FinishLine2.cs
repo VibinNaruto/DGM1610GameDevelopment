@@ -5,18 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine2 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // What this code does is load the next scene when you land on the final block. But you have to go to build settings and apply the level.
+    // At the top I used SceneMangaement so it wouldd use the engine.
       private void OnCollisionEnter2D(Collision2D other)
     {
         SceneManager.LoadScene("level3");
